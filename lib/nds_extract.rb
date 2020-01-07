@@ -86,7 +86,7 @@ def gross_per_studio(collection)
   else 
     h[studio] = totallity
   end
-  binding.pry
+  #binding.pry
   index += 1
   end
   h
