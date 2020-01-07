@@ -81,10 +81,11 @@ def gross_per_studio(collection)
     studio = movie_hash[:studio]
     gross = movie_hash[:worldwide_gross]
     totallity += gross
-  
+  h[studio: totallity]
+  binding.pry
   index += 1
   end
-  
+  h
   #
 end
 
