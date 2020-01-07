@@ -80,17 +80,17 @@ def gross_per_studio(collection)
     movie_hash = collection[index]
     studio = movie_hash[:studio]
     gross = movie_hash[:worldwide_gross]
-    totallity += gross
+    #totallity += gross
   if  h[studio]
-    h[studio] += totallity
+    h[studio] += gross
   else 
-    h[studio] = totallity
+    h[studio] = gross
   end
   #binding.pry
   index += 1
   end
   h
-  #binding.pry
+  binding.pry
 end
 
 def movies_with_directors_set(source)
